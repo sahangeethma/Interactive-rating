@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link href="output.css" rel="stylesheet" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .checked {
+        background-color: hsl(25, 97%, 53%) !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body
+    class="h-screen bg-VeryDarkBlue text-white font-body flex flex-col justify-center items-center"
+  >
+    <!-- Rating state start -->
+    <section
+      class="rating_section bg-gradient-to-t from-VeryDarkBlue to-DarkBlue w-5/6 p-6 rounded-2xl flex flex-col gap-y-5 max-w-sm"
+    >
+      <div
+        class="w-12 h-12 flex justify-center items-center bg-DarkBlue rounded-full"
+      >
+        <img class="w-4" src="./images/icon-star.svg" alt="" />
+      </div>
+      <h1 class="text-2xl font-bold tracking-wider">How did we do?</h1>
+      <p class="text-MediumGrey font-bold">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div
+        class="ratings w-full flex justify-between text-MediumGrey text-lg font-bold my-3"
+      >
+        <span
+          class="w-12 h-12 bg-DarkBlue flex items-center justify-center rounded-full hover:bg-MediumGrey hover:text-white hover:cursor-pointer"
+        >
+          1
+        </span>
+        <span
+          class="w-12 h-12 bg-DarkBlue flex items-center justify-center rounded-full hover:bg-MediumGrey hover:text-white hover:cursor-pointer"
+        >
+          2
+        </span>
+        <span
+          class="w-12 h-12 bg-DarkBlue flex items-center justify-center rounded-full hover:bg-MediumGrey hover:text-white hover:cursor-pointer"
+        >
+          3
+        </span>
+        <span
+          class="w-12 h-12 bg-DarkBlue flex items-center justify-center rounded-full hover:bg-MediumGrey hover:text-white hover:cursor-pointer"
+        >
+          4
+        </span>
+        <span
+          class="w-12 h-12 bg-DarkBlue flex items-center justify-center rounded-full hover:bg-MediumGrey hover:text-white hover:cursor-pointer"
+        >
+          5
+        </span>
+      </div>
+
+      <div
+        class="submit_btn w-full h-12 bg-OrangeC flex justify-center items-center rounded-full uppercase font-bold hover:bg-white hover:text-OrangeC hover:cursor-pointer"
+      >
+        <p class="tracking-wider">Submit</p>
+      </div>
+    </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <section
+      class="hidden thank_section bg-gradient-to-t from-VeryDarkBlue to-DarkBlue w-5/6 px-6 py-10 rounded-2xl flex flex-col gap-y-7 max-w-sm justify-center items-center text-center"
+    >
+      <img class="w-1/2" src="./images/illustration-thank-you.svg" alt="" />
+      <div
+        class="px-3 py-2 text-OrangeS bg-DarkBlue rounded-full flex justify-center"
+      >
+        <p>You selected <span id="rate"></span> out of 5</p>
+      </div>
+      <!-- Add rating here -->
+
+      <h2 class="text-2xl font-bold">Thank you!</h2>
+      <p class="text-MediumGrey">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+
+      <!-- Thank you state end -->
+    </section>
+    <div class="pt-10 attribution">
+      Challenge by
+      <a
+        rel="noopener"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/sahangeethma">Geethma</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
